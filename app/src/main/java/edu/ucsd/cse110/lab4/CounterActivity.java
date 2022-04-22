@@ -34,7 +34,7 @@ public class CounterActivity extends AppCompatActivity {
                 // Update the count
                 runOnUiThread(() ->{
                     counterView.setText(String.valueOf(countCopy));
-                    if(countCopy == 5){
+                    if(countCopy == maxCount){
                         Utilities.showAlert(this, "Count is finished");
                     }
                 });
